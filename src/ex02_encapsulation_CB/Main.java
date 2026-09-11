@@ -9,5 +9,6 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Something went wrong:"+e.getMessage());
         }
+        //si on a deux exceptions on catch qu'une seule exception
     }
 }
