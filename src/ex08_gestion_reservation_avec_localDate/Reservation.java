@@ -14,7 +14,7 @@ public class Reservation {
 
         if (!dateDepart.isAfter(dateArrivee)) {
             throw new IllegalArgumentException(
-                    "La date de départ doit être après la date d'arrivée."
+                    "La date de départ doit être après la date d'arrivée"
             );
         }
 
@@ -32,7 +32,7 @@ public class Reservation {
     public static boolean estEnHauteSaison(LocalDate date) {
 
         int mois = date.getMonthValue();
-
+        //month.JULY || month.AUGUST
         return mois == 7 || mois == 8;
     }
 
