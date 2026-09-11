@@ -12,5 +12,17 @@ public class Main {
         for (Forme forme : formes) {
             forme.afficherAire();
         }
+        Forme grandeForme = Forme.plusGrande(formes);
+
+        System.out.println(
+                "La plus grande forme est : "
+                        + grandeForme.getClass().getSimpleName()
+        );
+
+        System.out.println(
+                "Son aire est : "
+                        + grandeForme.aire()
+        );
+
     }
 }
