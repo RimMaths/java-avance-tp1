@@ -21,6 +21,8 @@ public class Etudiant {
     }
     //. Redéfinir equals(Object o) pour que deux étudiants soient considérés égaux si et seulement si leur
     //numeroEtudiant est identique (peu importe le nom ou la moyenne)
+    //quand on fait Override ( Object o ) on respecte la signature pour la redéfinition
+    // On redéfini une méthode qui est déjà redéfinit
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
